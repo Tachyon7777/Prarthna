@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Resources Hub</title>
+    <link rel="stylesheet" href="stylesheet_studentlogin.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Our Logo">
+            <h1>Resource Hub</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <input type="text" class="search-bar" placeholder="Search resources...">
+    </header>
+
+    <section id="hero">
+        <h2>Welcome to Your One-Stop Resource Hub!</h2>
+        <p>Access all your study materials, notes, and tools in one place.</p>
+        <button>Get Started</button>
+    </section>
+
+    <!-- Login Popup and Overlay -->
+<div class="overlay" id="overlay"></div>
+
+<div class="login-popup" id="loginPopup">
+    <h2>Login</h2>
+    <form>
+      <input type="text" placeholder="Username" id="username" required>
+      <input type="password" placeholder="Password" id="password" required>
+      <div class="options">
+        <div class="remember-me">
+          <input type="checkbox" id="rememberMe">
+          <label for="rememberMe">Remember Me</label>
+        </div>
+        <a href="#">Forgot Password?</a>
+      </div>
+      <button type="submit">Submit</button>
+      <button type="button" id="closeButton">Close</button>
+    </form>
+  </div>
+  
+
+
+    <section id="resources">
+        <h2>Popular Resources</h2>
+        <div class="resource-grid">
+            <div class="resource-card">
+                <h3>Subject Notes</h3>
+                <p>Download organized notes for every subject.</p>
+            </div>
+            <div class="resource-card">
+                <h3>Study Guides</h3>
+                <p>Get comprehensive study guides and tips.</p>
+            </div>
+            <div class="resource-card">
+                <h3>PYP/PYQs</h3>
+                <p>access previous year papers or questions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="categories">
+        <h2>Explore Categories</h2>
+        <ul>
+            <li>CS</li>
+            <li>Math</li>
+            <li>Biology</li>
+            <li>Chemistry</li>
+            <li>Physics</li>
+        </ul>
+    </section>
+
+    <footer id="contact">
+        <p>&copy;footer where we write all copyright shit.</p>
+        <a href="#">Contact Us</a>
+    </footer>
+</body>
+</html>

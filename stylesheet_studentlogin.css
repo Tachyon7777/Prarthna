@@ -1,0 +1,265 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /*background-image: url("bg1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #2c3e50;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(44, 62, 80, 0.9);
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    color: #ecf0f1;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #000000;
+}
+
+.search-bar {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid #bdc3c7;
+    width: 200px;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.search-bar:focus {
+    box-shadow: 0 0 10px #f1c40f;
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(236, 240, 241, 0.8);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+#hero h2 {
+    font-size: 2rem;
+    color: #34495e;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #7f8c8d;
+}
+
+#hero button {
+    background-color: rgba(44, 62, 80, 0.9);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#hero button:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Resource Section */
+#resources {
+    padding: 20px;
+    text-align: center;
+}
+
+.resource-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.resource-card {
+    background: rgba(236, 240, 241, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.resource-card:hover {
+    transform: translateY(-10px);
+}
+
+.resource-card h3 {
+    margin: 10px 0;
+    color: #34495e;
+}
+
+/* Categories Section */
+#categories {
+    padding: 20px;
+    text-align: center;
+}
+
+#categories ul {
+    list-style: none;
+    padding: 0;
+}
+
+#categories li {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: rgba(44, 62, 80, 0.9);
+    color: #ffffff;
+    border-radius: 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#categories li:hover {
+    background: #000000;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(44, 62, 80, 0.9);
+    color: #ecf0f1;
+    font-size: 0.9rem;
+}
+
+/* Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none; /* Initially hidden */
+    z-index: 10;
+  }
+  
+  /* Login Popup */
+.login-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%; /* Slightly wider for better usability */
+    background: #2c3e50; /* Modern dark theme */
+    color: #ecf0f1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 25px;
+    display: none; /* Initially hidden */
+    z-index: 20;
+}
+
+.login-popup h2 {
+    margin: 0 0 20px;
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.login-popup input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    background: #ecf0f1;
+    color: #2c3e50;
+}
+
+.login-popup input:focus {
+    border-color: #3498db;
+}
+
+.login-popup button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.login-popup button:hover {
+    background-color: #2980b9;
+}
+
+/* Forgot Password and Remember Me Section */
+.login-popup .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login-popup .options a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.login-popup .options a:hover {
+    color: #000000;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+}
