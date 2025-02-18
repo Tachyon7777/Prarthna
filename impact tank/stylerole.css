@@ -1,0 +1,117 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #2c3e50;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* PRARTHNA Title Centered at the Top */
+.prarthna-title {
+    font-size: 5.5rem;
+    color: #f1c40f;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    background: rgba(241, 196, 15, 0.2);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/* Logo Positioned on the Left */
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.logo img {
+    height: 300px;
+}
+
+/* Additional Header Text */
+.header-text {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #34495e;
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    font-family: 'Georgia', serif;
+}
+
+/* Role Selection Section */
+#role-selection {
+    padding: 80px;
+    background: rgba(236, 240, 241, 0.9); /* Light blueish contrast */
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#role-selection h2 {
+    font-size: 3rem;
+    color: #2c3e50;
+}
+
+#role-selection p {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+    color: #34495e;
+    font-family: 'Georgia', serif;
+}
+
+/* Buttons */
+.role-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.btn {
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 25px 50px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn.college {
+    background-color: #f1c40f;
+    color: #2c3e50;
+}
+
+.btn.college:hover {
+    background-color: #f39c12;
+}
+
+.btn.student {
+    background-color: #3498db;
+    color: white;
+}
+
+.btn.student:hover {
+    background-color: #2980b9;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 30px;
+    background-color: rgba(44, 62, 80, 0.9);
+    font-size: 1.2rem;
+    color: white;
+}
