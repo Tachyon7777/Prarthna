@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admin Signup - PRARTHNA</title>
+    <link rel="stylesheet" href="adminstyle.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="prarthna-title">PRARTHNA</h1>
+        
+        <h2 class="form-heading">College Admin Signup</h2>
+        <form class="signup-form">
+            <label for="college-name">College Name:</label>
+            <input type="text" id="college-name" name="college-name" required>
+
+            <label for="college-email">College Email (Official Domain):</label>
+            <input type="email" id="college-email" name="college-email" pattern=".+@.+\..+" required>
+
+            <label for="accreditation">Accreditation Certificate (AICTE, UGC, NAAC):</label>
+            <input type="file" id="accreditation" name="accreditation" accept=".pdf,.jpg,.png" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <button type="submit" class="signup-btn">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>

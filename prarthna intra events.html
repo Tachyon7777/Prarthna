@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intra College Events</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 24px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px gray;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .event-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .event-table th, .event-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        .event-table th {
+            background-color: #004080;
+            color: white;
+        }
+        .categories {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .category {
+            background: #008080;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+            transition: opacity 0.1s ease-in-out;
+            cursor: pointer;
+        }
+        .category:hover {
+            opacity: 0.6;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+            border-radius: 8px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .contact {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>INTRA COLLEGE EVENTS</header>
+
+    <div class="container">
+        <h2>Upcoming Events</h2>
+        <table class="event-table">
+            <tr>
+                <th>Event Name</th>
+                <th>Date & Time</th>
+                <th>Location</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Coding Challenge</td>
+                <td>March 15, 2025 | 10:00 AM</td>
+                <td>Lab 101</td>
+                <td>A competitive coding contest.</td>
+            </tr>
+            <tr>
+                <td>Science Quiz</td>
+                <td>March 20, 2025 | 2:00 PM</td>
+                <td>Auditorium</td>
+                <td>Test your scientific knowledge!</td>
+            </tr>
+        </table>
+
+        <h2>Event Categories</h2>
+        <div class="categories">
+            <div class="category">Academic</div>
+            <div class="category">Cultural</div>
+            <div class="category">Sports</div>
+            <div class="category">Workshops</div>
+        </div>
+
+        <h2>Past Events Gallery</h2>
+        <div class="gallery">
+            <img src="event1.jpg" alt="Event 1">
+            <img src="event2.jpg" alt="Event 2">
+            <img src="event3.jpg" alt="Event 3">
+        </div>
+
+        <div class="contact">
+            <h2>Contact</h2>
+            <p>Email:    | Phone:    </p>
+        </div>
+    </div>
+
+</body>
+</html>

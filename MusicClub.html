@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Club Information</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://media.collegedekho.com/media/img/institute/crawled_images/Nit_primary.jpg?width=640') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+        
+        header {
+            background: linear-gradient(90deg, #003366, #0066cc);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 40px;
+            border-bottom: 4px solid #fff;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: transform 0.6s;
+        }
+        
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            text-transform: capitalize;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+            transform: scale(1.1);
+        }
+
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 1s;
+        }
+
+        .container:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .center-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 40px 0;
+        }
+
+        .center-logo img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.6s ease;
+        }
+
+        .center-logo img:hover {
+            transform: rotate(360deg);
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h3 {
+            font-size: 2em;
+            text-align: center;
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        .events, .registration {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+
+        .event, .reg-form {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .event:hover, .reg-form:hover {
+            transform: scale(1.05);
+            background: #000000;
+        }
+
+        .event h4, .reg-form h4 {
+            color: #fff;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .event p, .reg-form p {
+            color: #ccc;
+            font-size: 1em;
+        }
+
+        .footer {
+            background: linear-gradient(90deg, #003366, #0066cc);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 16px;
+            margin-top: 40px;
+            border-top: 4px solid #fff;
+            animation: footerPulse 5s infinite alternate;
+        }
+
+        @keyframes footerPulse {
+            0% { opacity: 1; }
+            100% { opacity: 0.8; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">NITW Music Club</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Clubs</a>
+            <a href="#">Events</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Music Club</h2>
+        
+        <div class="center-logo">
+            <img src="Music Club.png" alt="Music Club Logo">
+        </div>
+
+        <div class="section">
+            <h3>Recent Events</h3>
+            <div class="events">
+                <div class="event">
+                    <h4>Annual Music Fest</h4>
+                    <p>Join us for an unforgettable music extravaganza with live performances.</p>
+                </div>
+                <div class="event">
+                    <h4>Open Mic Night</h4>
+                    <p>Showcase your talent and enjoy an evening of fun and music.</p>
+                </div>
+                <div class="event">
+                    <h4>Music Workshop</h4>
+                    <p>Learn new skills from professionals in our hands-on workshops.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Registration</h3>
+            <div class="registration">
+                <div class="reg-form">
+                    <h4>Join the Music Club</h4>
+                    <p>Be part of our vibrant community of music lovers. Sign up today!</p>
+                    <button style="padding: 10px 20px; background-color: #ffcc00; border: none; color: #003366;">Register Now</button>
+                </div>
+                <div class="reg-form">
+                    <h4>Volunteer for Events</h4>
+                    <p>Help us organize our upcoming music events. Get involved!</p>
+                    <button style="padding: 10px 20px; background-color: #ffcc00; border: none; color: #003366;">Sign Up</button>
+                </div>
+                <div class="reg-form">
+                    <h4>Become a Performer</h4>
+                    <p>If you have a talent to share, apply to perform at our events!</p>
+                    <button style="padding: 10px 20px; background-color: #ffcc00; border: none; color: #003366;">Apply Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        College Name | Address | Email: info@college.com | Phone: +91 9876543210
+    </div>
+</body>
+</html>

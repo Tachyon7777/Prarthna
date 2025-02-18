@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Clubs</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://media.collegedekho.com/media/img/institute/crawled_images/Nit_primary.jpg?width=640') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff; /* Light color for better contrast with the dark background */
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Soft shadow to make the text stand out */
+        }
+
+        /* Dark overlay */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark layer */
+            z-index: -1; /* Behind the content */
+        }
+        
+        header {
+            background: linear-gradient(90deg, #003366, #0066cc);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 40px;
+            border-bottom: 4px solid #fff;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: transform 0.6s;
+        }
+        a{
+            text-decoration:none;
+        }
+        
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            text-transform: capitalize;
+            transition: color 0.3s, transform 0.3s;
+        }
+        nav a:hover {
+            color: #ffcc00;
+            transform: scale(1.1);
+        }
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 1s;
+        }
+        .container:hover {
+            transform: scale(1.05);
+        }
+        h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .club-grid {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 30px;
+            padding: 20px 0;
+        }
+        .club {
+            background: rgb(121, 121, 121,0.8);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: all 0.3s ease-in-out;
+            transform: rotate(0deg);
+        }
+        .club:hover {
+            box-shadow: 0px 0px 25px rgba(9, 224, 224, 0.5);
+            transform: rotate(5deg) scale(1.05);
+            background: #0084a9;
+        }
+        .club img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            transition: transform 0.6s ease;
+        }
+        .club:hover img {
+            transform: rotate(360deg);
+        }
+        .club p {
+            font-size: 18px;
+            font-weight: 600;
+            color: #ffffff;
+            letter-spacing: 1px;
+        }
+        .footer {
+            background: linear-gradient(90deg, #003366, #0066cc);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 16px;
+            margin-top: 40px;
+            border-top: 4px solid #fff;
+            animation: footerPulse 5s infinite alternate;
+        }
+        @keyframes footerPulse {
+            0% { opacity: 1; }
+            100% { opacity: 0.8; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">NITW Clubs</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Clubs</a>
+            <a href="#">Events</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>College Clubs</h2>
+        <div class="club-grid">
+            <a href="Bclub.html" class="club">
+                <img src="Business Club.png" alt="Business Club">
+                <p>Business Club</p>
+            </a>
+            <a href="ldc.html" class="club">
+                <img src="LDC.png" alt="Literary and Debating Club">
+                <p>Literary and Debating Club</p>
+            </a>
+            <a href="musicclub.html" class="club">
+                <img src="Music Club.png" alt="Music Club">
+                <p>Music Club</p>
+            </a>
+            <a href="misfits.html" class="club">
+                <img src="misfits.png" alt="Misfits">
+                <p>Misfits</p>
+            </a>
+            <a href="aarohan.html" class="club">
+                <img src="Aarohan.png" alt="Aarohan">
+                <p>Aarohan</p>
+            </a>
+            <a href="uniq.html" class="club">
+                <img src="Uniq.png" alt="Uniq Dance Crew">
+                <p>Uniq Dance Crew</p>
+            </a>
+        </div>
+    </div>
+    <div class="footer">
+        College Name | Address | Email: info@college.com | Phone: +91 9876543210
+    </div>
+</body>
+</html>

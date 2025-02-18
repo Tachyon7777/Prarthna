@@ -1,0 +1,100 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    color: #2c3e50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+
+.container {
+    background: white;
+    padding: 70px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 60%;
+    max-width: 800px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+
+.prarthna-title {
+    font-size: 4.2rem;
+    color: #f1c40f;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background: rgba(255, 223, 70, 0.2);
+    padding: 15px;
+    border-radius: 12px;
+    display: inline-block;
+    letter-spacing: 2px;
+}
+
+
+.prarthna-logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+
+.form-heading {
+    font-size: 2.8rem;
+    color: #34495e;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+
+.signup-form label {
+    display: block;
+    font-size: 1.3rem;
+    margin: 15px 0 8px;
+    text-align: left;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.signup-form input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border 0.3s;
+}
+
+.signup-form input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+
+.signup-btn {
+    background: linear-gradient(to right, #3498db, #2980b9);
+    color: white;
+    padding: 16px 35px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.signup-btn:hover {
+    background: linear-gradient(to right, #2980b9, #1c6ea4);
+    transform: scale(1.05);
+}
