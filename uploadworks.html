@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Role Selection - PRARTHNA</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #ece9e6, #ffffff);
+            color: #2c3e50;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(44, 62, 80, 0.9);
+            padding: 15px 30px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ecf0f1;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .header-text {
+            font-size: 2.5rem;
+            color: #34495e;
+            margin-top: 40px;
+            font-weight: bold;
+        }
+
+        #role-selection {
+            padding: 20px;
+            background: white;
+            width: 50%;
+            margin: 50px auto;
+            border-radius: 20px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .role-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .btn {
+            text-decoration: none;
+            font-size: 20px;
+            padding: 15px 30px;
+            border-radius: 12px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .btn.college {
+            background-color: #f1c40f;
+            color: #2c3e50;
+        }
+
+        .btn.student {
+            background-color: #3498db;
+            color: white;
+        }
+
+        .container {
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 40%;
+            max-width: 800px;
+            margin: 50px auto;
+        }
+
+        .form-heading {
+            font-size: 2rem;
+            color: #34495e;
+            margin-bottom: 20px;
+        }
+
+        .signup-form label {
+            display: block;
+            font-size: 1.2rem;
+            text-align: left;
+            margin-bottom: 5px;
+        }
+
+        .signup-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        .signup-btn {
+            background: #3498db;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .signup-btn:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>PRARTHNA</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+
+    <div id="college-signup" class="container">
+        <h2 class="form-heading">Upload your work</h2>
+        <form class="signup-form">
+            <label for="college-name">Your Name:</label>
+            <input type="text" id="college-name" name="your-name" required>
+
+            <label for="college-email">your roll numberl:</label>
+            <input type="email" id="college-email" name="your roll number" required>
+
+            <label for="accreditation">Your work:</label>
+            <input type="file" id="accreditation" name="accreditation" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <button type="submit" class="signup-btn">Sign Up</button>
+        </form>
+    </div>
+
+    <footer>
+        &copy; 2025 PRARTHNA | All Rights Reserved
+    </footer>
+</body>
+</html>
