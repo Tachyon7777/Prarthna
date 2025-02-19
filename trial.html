@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senior Connect</title>
+    <style>
+        /* General Reset */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://media.collegedekho.com/media/img/institute/crawled_images/Nit_primary.jpg?width=640') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Dark Overlay */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+
+        /* Navbar */
+        header {
+            display: flex;
+            justify-content: space-between;
+            
+            align-items: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .logo h1 {
+            margin: 0;
+            font-size: 28px;
+            color: #ffcc00;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+            text-shadow: 0 0 10px rgba(255, 204, 0, 0.8);
+        }
+        .trial{
+            display:flex;
+            flex-direction:row;
+        }
+
+        /* Sections */
+        section {
+            padding: 40px 20px;
+            margin: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width:400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #ffcc00;
+            text-transform: uppercase;
+        }
+
+        .sector-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .senior-card {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(255, 204, 0, 0.3);
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .senior-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #ffcc00;
+        }
+
+        .senior-card h3 {
+            margin: 10px 0;
+            color: #ffcc00;
+        }
+
+        .senior-card p {
+            font-size: 0.9rem;
+            color: #ddd;
+        }
+
+        .senior-card a {
+            text-decoration: none;
+            color: #ffcc00;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .senior-card a:hover {
+            color: #fff;
+            text-shadow: 0 0 10px rgba(255, 204, 0, 0.8);
+        }
+
+        .senior-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(255, 204, 0, 0.5);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #ffcc00;
+            font-size: 0.9rem;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Senior Connect</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">SDE</a></li>
+                <li><a href="#">Consultancy</a></li>
+                <li><a href="#">Finance</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="trial">
+    <section id="sde">
+        <h2>SDE (Software Development Engineering)</h2>
+        <div class="sector-container">
+            <div class="senior-card">
+                <img src="senior1.jpg" alt="Senior 1">
+                <h3>Senior1</h3>
+                <p>Expert in Full-Stack Development</p>
+                <a href="https://www.linkedin.com/in/" target="_blank">LinkedIn</a>
+            </div>
+            <div class="senior-card">
+                <img src="senior2.jpg" alt="Senior 2">
+                <h3>Senior2</h3>
+                <p>Specializes in Backend Systems</p>
+                <a href="https://www.linkedin.com/in/" target="_blank">LinkedIn</a>
+            </div>
+            <div class="senior-card">
+                <img src="senior3.jpg" alt="Senior 3">
+                <h3>Senior3</h3>
+                <p>Machine Learning Enthusiast</p>
+                <a href="https://www.linkedin.com/in/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="consultancy">
+        <h2>Consultancy</h2>
+        <div class="sector-container">
+            <div class="senior-card">
+                <img src="senior4.jpg" alt="Senior 4">
+                <h3>Senior4</h3>
+                <p>Strategy & Business Development</p>
+                <a href="https://www.linkedin.com/in/" target="_blank">LinkedIn</a>
+            </div>
+            <div class="senior-card">
+                <img src="senior5.jpg" alt="Senior 5">
+                <h3>Senior5</h3>
+                <p>Expert in Marketing Analytics</p>
+                <a href="https://www.linkedin.com/in/" target="_blank">LinkedIn</a>
+            </div>
+            <div class="senior-card">
+                <img src="senior6.jpg" alt="Senior 6">
+                <h3>Senior6</h3>
+                <p>Financial Risk Management</p>
+                <a href="https://www.linkedin.com/in/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="finance">
+        <h2>Finance</h2>
+        <div class="sector-container">
+            <div class="senior-card">
+                <img src="senior7.jpg" alt="Senior 7">
+                <h3>Senior7</h3>
+                <p>Stock Market Analyst</p>
+                <a href="https://www.linkedin.com/in/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Senior Connect. All rights reserved.</p>
+    </footer>
+</body>
+</html>
