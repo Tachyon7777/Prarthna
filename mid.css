@@ -1,0 +1,81 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(44, 62, 80, 0.9);
+    padding: 15px;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* Hero Section */
+#hero {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+#hero h2 {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    color: #ecf0f1;
+    margin-bottom: 20px;
+}
+
+/* Cards */
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    text-decoration: none;
+    color: #2c3e50;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-decoration-color: black;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background: #2c3e50;
+    color: white;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background: rgba(44, 62, 80, 0.9);
+    color: #ecf0f1;
+}
