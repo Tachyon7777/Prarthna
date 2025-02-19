@@ -149,24 +149,32 @@
 
     <div id="college-signup" class="container">
         <h2 class="form-heading">College Admin Signup</h2>
-        <form class="signup-form">
-            <label for="college-name">College Name:</label>
-            <input type="text" id="college-name" name="college-name" required>
+       <form class="signup-form" onsubmit="redirectToHomepage(event)">
+    <label for="college-name">College Name:</label>
+    <input type="text" id="college-name" name="college-name" required>
 
-            <label for="college-email">College Email:</label>
-            <input type="email" id="college-email" name="college-email" required>
+    <label for="college-email">College Email:</label>
+    <input type="email" id="college-email" name="college-email" required>
 
-            <label for="accreditation">Accreditation Certificate:</label>
-            <input type="file" id="accreditation" name="accreditation" required>
+    <label for="accreditation">Accreditation Certificate:</label>
+    <input type="file" id="accreditation" name="accreditation" required>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
 
-            <label for="confirm-password">Confirm Password:</label>
-            <input type="password" id="confirm-password" name="confirm-password" required>
+    <label for="confirm-password">Confirm Password:</label>
+    <input type="password" id="confirm-password" name="confirm-password" required>
 
-           <a href="firsthomepage.html"> <button type="submit" class="signup-btn">Sign Up</button></a>
-        </form>
+    <button type="submit" class="signup-btn">Sign Up</button>
+</form>
+
+<script>
+    function redirectToHomepage(event) {
+        event.preventDefault(); // Prevents form submission to server
+        window.location.href = "firsthomepage.html"; // Redirects to the desired page
+    }
+</script>
+
     </div>
 
     <footer>
