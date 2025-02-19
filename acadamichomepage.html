@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Resources Hub</title>
+    <link rel="stylesheet" href="stylesheet_studentlogin.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://media.collegedekho.com/media/img/institute/crawled_images/Nit_primary.jpg?width=640') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+        
+        header {
+            background: linear-gradient(90deg, #003366, #0066cc);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 40px;
+            border-bottom: 4px solid #fff;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: transform 0.6s;
+        }
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            text-transform: capitalize;
+            transition: color 0.3s, transform 0.3s;
+        }
+        nav a:hover {
+            color: #ffcc00;
+            transform: scale(1.1);
+        }
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 1s;
+        }
+        .container:hover {
+            transform: scale(1.05);
+        }
+        h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .resource-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .resource-card {
+            background: rgba(236, 240, 241, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .resource-card:hover {
+            transform: translateY(-10px);
+        }
+        .departments {
+            width: 80%;
+            margin: 40px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .department-card {
+            background: rgba(236, 240, 241, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .department-card:hover {
+            transform: translateY(-10px);
+        }
+        .department-card img {
+            width: 100%;
+            height: 150px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .footer {
+            background: linear-gradient(90deg, #003366, #0066cc);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 16px;
+            margin-top: 40px;
+            border-top: 4px solid #fff;
+            animation: footerPulse 5s infinite alternate;
+        }
+        @keyframes footerPulse {
+            0% { opacity: 1; }
+            100% { opacity: 0.8; }
+        }
+        a{
+            text-decoration:none;
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Resource Hub</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#resources">Resources</a>
+            <a href="#categories">Categories</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Welcome to Your One-Stop Resource Hub!</h2>
+        <p>Access all your study materials, notes, and tools in one place.</p>
+    </div>
+    <section id="departments">
+        <h2>Departments</h2>
+        <div class="departments">
+            <div class="department-card">
+                <img src="https://snu.edu.in/site/assets/files/12045/person-sitting-desk-dark-room-coding-with-green-light-surrounding-them.1600x0.webp" alt="CSE">
+                <h3><a href="https://www.nitw.ac.in/department/cse/" target="_blank">Computer Science and Engineering</a></h3>
+            </div>
+            <div class="department-card">
+                <img src="https://www.icgeb.org/wp-content/uploads/2018/10/DNA-AdobeStock_banner.jpg" alt="Biotech">
+                <h3><a href="https://www.nitw.ac.in/department/biotech/" target="_blank">Biotechnology</a></h3>
+            </div>
+            <div class="department-card">
+                <img src="https://sru.edu.in/assets/schools/ece/ece.png" alt="ECE">
+                <h3><a href="https://www.nitw.ac.in/department/ece/" target="_blank">Electronics and Communication Engineering</a></h3>
+            </div>
+            <div class="department-card">
+                <img src="https://images.shiksha.com/mediadata/images/articles/1538648745phpWfy7Lc.jpeg" alt="EEE">
+                <h3><a href="https://www.nitw.ac.in/department/eee/" target="_blank">Electrical and Electronics Engineering</a></h3>
+            </div>
+            <div class="department-card">
+                <img src="https://www.3ds.com/assets/invest/2022-12/mechanical-design-11_1.jpg" alt="Mechanical">
+                <h3><a href="https://www.nitw.ac.in/department/mech/" target="_blank">Mechanical Engineering</a></h3>
+            </div>
+           
+            <div class="department-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png" alt="Upload">
+                <h3><a href="upload.html">Upload Your Work</a></h3>
+            </div>
+        </div>
+    </section>
+    
+    <div class="footer">
+        &copy; 2025 Student Resources Hub | Contact: info@resources.com
+    </div>
+</body>
+</html>
