@@ -44,7 +44,8 @@
                 </div>
                 <a href="#">Forgot Password?</a>
             </div>
-            <button type="submit">Submit</button>
+            <button type="submit" id="submitButton">Submit</button>
+
             <button type="button" id="closeButton">Close</button>
         </form>
     </div>
@@ -190,25 +191,33 @@
 </style>
 
 <script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const loginTrigger = document.getElementById("loginTrigger");
-        const closeButton = document.getElementById("closeButton");
-        const overlay = document.getElementById("overlay");
-        const loginPopup = document.getElementById("loginPopup");
-        
-        loginTrigger.addEventListener("click", () => {
-            overlay.style.display = "block";
-            loginPopup.style.display = "block";
-        });
-        
-        closeButton.addEventListener("click", () => {
-            overlay.style.display = "none";
-            loginPopup.style.display = "none";
-        });
-        
-        overlay.addEventListener("click", () => {
-            closeButton.click();
-        });
+  document.addEventListener("DOMContentLoaded", () => {
+    const loginTrigger = document.getElementById("loginTrigger");
+    const closeButton = document.getElementById("closeButton");
+    const overlay = document.getElementById("overlay");
+    const loginPopup = document.getElementById("loginPopup");
+    const submitButton = document.getElementById("submitButton");
+
+    loginTrigger.addEventListener("click", () => {
+        overlay.style.display = "block";
+        loginPopup.style.display = "block";
     });
+
+    closeButton.addEventListener("click", () => {
+        overlay.style.display = "none";
+        loginPopup.style.display = "none";
+    });
+
+    overlay.addEventListener("click", () => {
+        closeButton.click();
+    });
+
+    // 🚀 Redirect on Submit Button Click
+    submitButton.addEventListener("click", (event) => {
+        event.preventDefault(); // Prevents actual form submission
+        window.location.href = "https://pranavumbarkar06.github.io/Prarthna/Prarthna/studentredirect.html";
+    });
+});
+
 </script>
 
