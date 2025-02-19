@@ -34,7 +34,8 @@
     <div class="overlay" id="overlay"></div>
     <div class="login-popup" id="loginPopup">
         <h2>Login</h2>
-        <form>
+        <form id="loginForm">
+
             <input type="text" placeholder="Username" id="username" required>
             <input type="password" placeholder="Password" id="password" required>
             <div class="options">
@@ -191,12 +192,12 @@
 </style>
 
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
+ document.addEventListener("DOMContentLoaded", () => {
     const loginTrigger = document.getElementById("loginTrigger");
     const closeButton = document.getElementById("closeButton");
     const overlay = document.getElementById("overlay");
     const loginPopup = document.getElementById("loginPopup");
-    const submitButton = document.getElementById("submitButton");
+    const loginForm = document.getElementById("loginForm"); // Get the form
 
     loginTrigger.addEventListener("click", () => {
         overlay.style.display = "block";
@@ -212,12 +213,13 @@
         closeButton.click();
     });
 
-    // 🚀 Redirect on Submit Button Click
-    submitButton.addEventListener("click", (event) => {
-        event.preventDefault(); // Prevents actual form submission
+    // 🚀 Redirect when the form is submitted
+    loginForm.addEventListener("submit", (event) => {
+        event.preventDefault(); // Prevent actual form submission
         window.location.href = "https://pranavumbarkar06.github.io/Prarthna/Prarthna/studentredirect.html";
     });
 });
+
 
 </script>
 
