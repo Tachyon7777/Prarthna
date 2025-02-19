@@ -1,0 +1,188 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://media.collegedekho.com/media/img/institute/crawled_images/Nit_primary.jpg?width=640') no-repeat center center;
+    background-size: cover;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(44, 62, 80, 0.9);
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    color: #ecf0f1;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+/* Login Button */
+.login-btn {
+    background: black; /* Changed from gold to black */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+    margin-right: 50px; /* Moved slightly left */
+}
+
+.login-btn:hover {
+    background: #333;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px; /* Reduced size */
+    color: white;
+    background: rgba(44, 62, 80, 0.7);
+    margin-top: 60px;
+}
+
+.hero h2 {
+    font-size: 2rem;
+}
+
+.hero p {
+    font-size: 1rem;
+}
+
+/* Rankings Section */
+.rankings {
+    text-align: center;
+    padding: 40px;
+    background: rgba(236, 240, 241, 0.9);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.ranking-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.rank {
+    border: 2px solid #2c3e50;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    transition: transform 0.3s;
+}
+
+.rank:hover {
+    transform: scale(1.1);
+}
+
+.rank span {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Content Section */
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.left, .right {
+    width: 45%;
+    padding: 20px;
+}
+
+/* Background for better visibility */
+.left {
+    background: rgba(236, 240, 241, 0.9); /* Light grey */
+    border-radius: 10px;
+}
+
+.right {
+    background: rgba(236, 240, 241, 0.9); /* Light grey */
+    border-radius: 10px;
+}
+
+.right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.right ul li {
+    background: rgba(44, 62, 80, 0.8);
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.right ul li:hover {
+    background: black;
+}
+
+/* More Info Section */
+.more-info {
+    text-align: center;
+    padding: 40px;
+    background: rgba(236, 240, 241, 0.9);
+    margin: 20px;
+}
+
+.more-info h2 {
+    font-size: 1.8rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(44, 62, 80, 0.9);
+    color: white;
+}
