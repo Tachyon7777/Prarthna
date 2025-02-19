@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prarthna - Connect & Grow</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #000000, #34495e);
+            color: #ecf0f1;
+            position: relative;
+            scroll-behavior: smooth;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(52, 73, 94, 0.9);
+            padding: 15px 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        header .logo h1 {
+            color: #f1c40f;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #ecf0f1;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #f1c40f;
+        }
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            font-size: 1.2rem;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .content {
+            padding: 30px 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease;
+        }
+        .content:hover {
+            transform: scale(1.02);
+        }
+        h2 {
+            color: #f1c40f;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: rgba(52, 73, 94, 0.9);
+            color: #ecf0f1;
+            font-size: 0.9rem;
+        }
+        .role-button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .role-button {
+            background: #f1c40f;
+            color: #2c3e50;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+        .role-button:hover {
+            background: #d4ac0d;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Prarthna - Connect & Grow</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#clubs">Clubs</a></li>
+                <li><a href="#career">Career</a></li>
+                <li><a href="#academics">Academics</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Welcome to Prarthna</h2>
+        <p>Empowering students with career guidance, academic support, and community connections.</p>
+    </section>
+
+    <div class="role-button-container">
+        <button class="role-button" onclick="window.location.href='Prarthna/roleselection.html'">Select Role</button>
+    </div>
+
+    <div class="grid-container">
+        <section id="about" class="content">
+            <h2>About Prarthna</h2>
+            <p>Prarthna is a platform dedicated to connecting students across India, providing career counseling, managing intra-college clubs, and offering academic relief.</p>
+        </section>
+
+        <section id="clubs" class="content">
+            <h2>Intra-College Club Administration</h2>
+            <p>Manage and explore various college clubs, participate in events, and collaborate with like-minded peers.</p>
+        </section>
+
+        <section id="career" class="content">
+            <h2>Career Counselling</h2>
+            <p>Get expert guidance from industry professionals and alumni to navigate your career path.</p>
+        </section>
+
+        <section id="academics" class="content">
+            <h2>Academic Relief</h2>
+            <p>Access study materials, past papers, mentorship, and resources to ease your academic journey.</p>
+        </section>
+
+        <section id="contact" class="content">
+            <h2>Get in Touch</h2>
+            <p>Connect with us for queries, collaborations, and support.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Prarthna | Empowering Students Nationwide</p>
+    </footer>
+
+</body>
+</html>
