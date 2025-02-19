@@ -1,0 +1,118 @@
+/* General Reset */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://media.collegedekho.com/media/img/institute/crawled_images/Nit_primary.jpg?width=640') no-repeat center center fixed;
+    background-size: cover;
+    color: #000000;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(44, 62, 80, 0.9);
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h1 {
+    color: #ecf0f1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f1c40f;
+}
+
+/* Section Style */
+section {
+    padding: 40px 20px;
+    margin: 20px;
+    background-color: rgb(255, 255, 255,0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2rem;
+    color: #34495e;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.senior-card {
+    background:  rgba(44, 62, 80, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.senior-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+    object-fit: cover;
+}
+
+.senior-card h3 {
+    margin: 10px 0;
+    color: #ffffff;
+}
+.senior-card p{
+    color:rgb(186, 219, 248);
+}
+
+.senior-card a {
+    text-decoration: none;
+    color: #3498db;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.senior-card a:hover {
+    color: #2980b9;
+}
+
+.senior-card:hover {
+    transform: translateY(-10px);
+}
+
+.sector-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(44, 62, 80, 0.9);
+    color: #ecf0f1;
+    font-size: 0.9rem;
+}
