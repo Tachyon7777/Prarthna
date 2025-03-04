@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Resources Hub - PRARTHNA</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #000000, #34495e);
+            color: #ecf0f1;
+            text-align: center;
+            scroll-behavior: smooth;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(52, 73, 94, 0.9);
+            padding: 15px 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            flex-wrap: wrap;
+        }
+
+        .logo h1 {
+            color: #f1c40f;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 5px 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ecf0f1;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #f1c40f;
+        }
+
+        .search-bar {
+            padding: 8px 15px;
+            border-radius: 25px;
+            border: 1px solid #bdc3c7;
+            width: 220px;
+            outline: none;
+        }
+
+        .search-bar:focus {
+            box-shadow: 0 0 10px #f1c40f;
+        }
+
+        #hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            margin: 20px auto;
+            width: 90%;
+            max-width: 800px;
+            border-radius: 15px;
+            color: #ffffff;
+        }
+
+        #hero button {
+            background: black;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease;
+        }
+
+        #hero button:hover {
+            background: #444;
+        }
+
+        .resource-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .resource-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            width: 250px;
+        }
+
+        /* Overlay (Background Blur Effect) */
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(5px);
+            z-index: 10;
+        }
+
+        /* Login Popup Box */
+        .login-popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background:rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            z-index: 20;
+            text-align: center;
+            width: 300px;
+        }
+
+        .login-popup h2 {
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        .login-popup input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .login-popup .options {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9em;
+        }
+
+        .login-popup button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-popup button:hover {
+            background: #444;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: rgba(52, 73, 94, 0.9);
+            color: #ecf0f1;
+            font-size: 0.9rem;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>PRARTHNA</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <input type="text" class="search-bar" placeholder="Search resources...">
+    </header>
+
+    <section id="hero">
+        <h2>Welcome to Your One-Stop Resource Hub!</h2>
+        <p>Access all your study materials, notes, and tools in one place.</p>
+        <button id="loginTrigger">Get Started</button>
+    </section>
+
+    <section id="resources">
+        <h2>Popular Resources</h2>
+        <div class="resource-grid">
+            <div class="resource-card">
+                <h3>Subject Notes</h3>
+                <p>Download organized notes for every subject.</p>
+            </div>
+            <div class="resource-card">
+                <h3>Study Guides</h3>
+                <p>Get comprehensive study guides and tips.</p>
+            </div>
+            <div class="resource-card">
+                <h3>PYP/PYQs</h3>
+                <p>Access previous year papers or questions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Login Popup -->
+    <div class="login-popup" id="loginPopup">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" placeholder="Username" id="username" required>
+            <input type="password" placeholder="Password" id="password" required>
+            <button type="submit">Login</button>
+            <button type="button" id="closeButton">Close</button>
+        </form>
+    </div>
+
+    <footer id="contact">
+        <p>&copy; 2025 PRARTHNA | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const loginTrigger = document.getElementById("loginTrigger");
+            const closeButton = document.getElementById("closeButton");
+            const overlay = document.getElementById("overlay");
+            const loginPopup = document.getElementById("loginPopup");
+
+            loginTrigger.addEventListener("click", () => {
+                overlay.style.display = "block";
+                loginPopup.style.display = "block";
+            });
+
+            closeButton.addEventListener("click", () => {
+                overlay.style.display = "none";
+                loginPopup.style.display = "none";
+            });
+
+            document.getElementById("loginForm").addEventListener("submit", (event) => {
+                event.preventDefault();
+                window.location.href = "https://pranavumbarkar06.github.io/Prarthna/Prarthna/studentredirect.html";
+            });
+        });
+    </script>
+</body>
+</html>

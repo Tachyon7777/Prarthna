@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Role Selection - PRARTHNA</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #000000, #34495e);
+            color: #ecf0f1;
+            text-align: center;
+            scroll-behavior: smooth;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(52, 73, 94, 0.9);
+            padding: 15px 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            flex-wrap: wrap;
+        }
+
+        header .logo h1 {
+            color: #f1c40f;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 5px 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ecf0f1;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #f1c40f;
+        }
+
+        .header-text {
+            font-size: 2rem;
+            font-weight: bold;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 40px auto;
+            max-width: 80%;
+            color: #f1c40f;
+        }
+
+        #role-selection {
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            width: 50%;
+            margin: 50px auto;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        #role-selection h2 {
+            color: #f1c40f;
+        }
+
+        .role-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn.college {
+            background-color: #f1c40f;
+            color: #2c3e50;
+        }
+
+        .btn.college:hover {
+            background-color: #d4ac0d;
+        }
+
+        .btn.student {
+            background-color: #3498db;
+            color: white;
+        }
+
+        .btn.student:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: rgba(52, 73, 94, 0.9);
+            color: #ecf0f1;
+            font-size: 0.9rem;
+            margin-top: auto;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+            #role-selection {
+                width: 80%;
+            }
+            .role-buttons {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>PRARTHNA</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="header-text">Connecting Students with Students across the globe!</div>
+
+    <section id="role-selection">
+        <h2>Select Your Role</h2>
+        <p>Are you a student or a college admin?</p>
+        <div class="role-buttons">
+            <a href="CollegeLogin.html" class="btn college">I'm a College Admin</a>
+            <a href="studentlogin.html" class="btn student">I'm a Student</a>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 PRARTHNA | All Rights Reserved
+    </footer>
+</body>
+</html>
