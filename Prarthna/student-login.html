@@ -3,15 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Resources Hub</title>
-    <link rel="stylesheet" href="stylesheet_studentlogin.css">
-    <script src="script.js" defer></script>
+    <title>Student Resources Hub - PRARTHNA</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #000000, #34495e);
+            color: #ecf0f1;
+            text-align: center;
+            scroll-behavior: smooth;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(52, 73, 94, 0.9);
+            padding: 15px 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            flex-wrap: wrap;
+        }
+
+        .logo h1 {
+            color: #f1c40f;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 5px 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ecf0f1;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #f1c40f;
+        }
+
+        .search-bar {
+            padding: 8px 15px;
+            border-radius: 25px;
+            border: 1px solid #bdc3c7;
+            width: 220px;
+            outline: none;
+        }
+
+        .search-bar:focus {
+            box-shadow: 0 0 10px #f1c40f;
+        }
+
+        #hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            margin: 20px auto;
+            width: 90%;
+            max-width: 800px;
+            border-radius: 15px;
+            color: #ecf0f1;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        #hero button {
+            background: #000000;
+            color: #ffffff;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease;
+        }
+
+        #hero button:hover {
+            background: #222222;
+        }
+
+        .resource-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .resource-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            width: 250px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: rgba(52, 73, 94, 0.9);
+            color: #ecf0f1;
+            font-size: 0.9rem;
+            margin-top: auto;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="logo.png" alt="Our Logo">
-            <h1>Resource Hub</h1>
+            <h1>PRARTHNA</h1>
         </div>
         <nav>
             <ul>
@@ -29,27 +143,6 @@
         <p>Access all your study materials, notes, and tools in one place.</p>
         <button id="loginTrigger">Get Started</button>
     </section>
-
-    <!-- Login Popup and Overlay -->
-    <div class="overlay" id="overlay"></div>
-    <div class="login-popup" id="loginPopup">
-        <h2>Login</h2>
-        <form id="loginForm">
-
-            <input type="text" placeholder="Username" id="username" required>
-            <input type="password" placeholder="Password" id="password" required>
-            <div class="options">
-                <div class="remember-me">
-                    <input type="checkbox" id="rememberMe">
-                    <label for="rememberMe">Remember Me</label>
-                </div>
-                <a href="#">Forgot Password?</a>
-            </div>
-            <button type="submit" id="submitButton">Submit</button>
-
-            <button type="button" id="closeButton">Close</button>
-        </form>
-    </div>
 
     <section id="resources">
         <h2>Popular Resources</h2>
@@ -69,157 +162,9 @@
         </div>
     </section>
 
-    <section id="categories">
-        <h2>Explore Categories</h2>
-        <ul>
-            <li>CS</li>
-            <li>Math</li>
-            <li>Biology</li>
-            <li>Chemistry</li>
-            <li>Physics</li>
-        </ul>
-    </section>
-
     <footer id="contact">
-        <p>&copy; 2025 Resource Hub. All rights reserved.</p>
+        <p>&copy; 2025 PRARTHNA | All Rights Reserved</p>
         <a href="#">Contact Us</a>
     </footer>
 </body>
 </html>
-
-<style>
-    body {
-        margin: 0;
-        font-family: "Poppins", sans-serif;
-        background-image: url("bg1.jpg");
-        background-size: cover;
-        background-attachment: fixed;
-        color: #2c3e50;
-    }
-
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: rgba(44, 62, 80, 0.95);
-        padding: 15px 30px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .logo {
-        display: flex;
-        align-items: center;
-    }
-
-    .logo img {
-        height: 50px;
-        margin-right: 10px;
-    }
-
-    .logo h1 {
-        color: #ecf0f1;
-        font-size: 1.8rem;
-    }
-
-    nav ul {
-        list-style: none;
-        display: flex;
-        margin: 0;
-        padding: 0;
-    }
-
-    nav ul li {
-        margin: 0 20px;
-    }
-
-    nav ul li a {
-        text-decoration: none;
-        color: #ecf0f1;
-        font-size: 1.1rem;
-        transition: color 0.3s ease;
-    }
-
-    nav ul li a:hover {
-        color: #f1c40f;
-    }
-
-    .search-bar {
-        padding: 8px 15px;
-        border-radius: 25px;
-        border: 1px solid #bdc3c7;
-        width: 220px;
-        outline: none;
-    }
-
-    .search-bar:focus {
-        box-shadow: 0 0 10px #f1c40f;
-    }
-
-    #hero {
-        text-align: center;
-        padding: 60px 20px;
-        background: rgba(236, 240, 241, 0.9);
-        margin: 20px auto;
-        width: 90%;
-        max-width: 800px;
-        border-radius: 15px;
-    }
-
-    #hero h2 {
-        font-size: 2.5rem;
-        color: #34495e;
-    }
-
-    #hero p {
-        font-size: 1.3rem;
-        color: #7f8c8d;
-    }
-
-    #hero button {
-        background: #3498db;
-        color: #ffffff;
-        border: none;
-        padding: 12px 25px;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 1.2rem;
-        transition: background-color 0.3s ease;
-    }
-
-    #hero button:hover {
-        background: #2980b9;
-    }
-</style>
-
-<script>
- document.addEventListener("DOMContentLoaded", () => {
-    const loginTrigger = document.getElementById("loginTrigger");
-    const closeButton = document.getElementById("closeButton");
-    const overlay = document.getElementById("overlay");
-    const loginPopup = document.getElementById("loginPopup");
-    const loginForm = document.getElementById("loginForm"); // Get the form
-
-    loginTrigger.addEventListener("click", () => {
-        overlay.style.display = "block";
-        loginPopup.style.display = "block";
-    });
-
-    closeButton.addEventListener("click", () => {
-        overlay.style.display = "none";
-        loginPopup.style.display = "none";
-    });
-
-    overlay.addEventListener("click", () => {
-        closeButton.click();
-    });
-
-    // 🚀 Redirect when the form is submitted
-    loginForm.addEventListener("submit", (event) => {
-        event.preventDefault(); // Prevent actual form submission
-        window.location.href = "https://pranavumbarkar06.github.io/Prarthna/Prarthna/studentredirect.html";
-    });
-});
-
-
-</script>
-
