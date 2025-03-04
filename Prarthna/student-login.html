@@ -77,13 +77,12 @@
             width: 90%;
             max-width: 800px;
             border-radius: 15px;
-            color: #ecf0f1;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            color: #ffffff;
         }
 
         #hero button {
-            background: #000000;
-            color: #ffffff;
+            background: black;
+            color: white;
             border: none;
             padding: 12px 25px;
             border-radius: 5px;
@@ -93,7 +92,7 @@
         }
 
         #hero button:hover {
-            background: #222222;
+            background: #444;
         }
 
         .resource-grid {
@@ -110,6 +109,69 @@
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
             width: 250px;
+        }
+
+        /* Overlay (Background Blur Effect) */
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(5px);
+            z-index: 10;
+        }
+
+        /* Login Popup Box */
+        .login-popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background:rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            z-index: 20;
+            text-align: center;
+            width: 300px;
+        }
+
+        .login-popup h2 {
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        .login-popup input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .login-popup .options {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9em;
+        }
+
+        .login-popup button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-popup button:hover {
+            background: #444;
         }
 
         footer {
@@ -162,9 +224,46 @@
         </div>
     </section>
 
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Login Popup -->
+    <div class="login-popup" id="loginPopup">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" placeholder="Username" id="username" required>
+            <input type="password" placeholder="Password" id="password" required>
+            <button type="submit">Login</button>
+            <button type="button" id="closeButton">Close</button>
+        </form>
+    </div>
+
     <footer id="contact">
         <p>&copy; 2025 PRARTHNA | All Rights Reserved</p>
-        <a href="#">Contact Us</a>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const loginTrigger = document.getElementById("loginTrigger");
+            const closeButton = document.getElementById("closeButton");
+            const overlay = document.getElementById("overlay");
+            const loginPopup = document.getElementById("loginPopup");
+
+            loginTrigger.addEventListener("click", () => {
+                overlay.style.display = "block";
+                loginPopup.style.display = "block";
+            });
+
+            closeButton.addEventListener("click", () => {
+                overlay.style.display = "none";
+                loginPopup.style.display = "none";
+            });
+
+            document.getElementById("loginForm").addEventListener("submit", (event) => {
+                event.preventDefault();
+                window.location.href = "https://pranavumbarkar06.github.io/Prarthna/Prarthna/studentredirect.html";
+            });
+        });
+    </script>
 </body>
 </html>
