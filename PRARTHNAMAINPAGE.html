@@ -18,21 +18,20 @@
             justify-content: space-between;
             align-items: center;
             background: rgba(52, 73, 94, 0.9);
-            padding: 15px 40px;
+            padding: 20px 60px; /* Doubled padding */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             flex-wrap: wrap;
         }
         header .logo h1 {
             color: #f1c40f;
             font-weight: bold;
-            font-size: 1.5rem;
+            font-size: 1.8rem; /* Slightly larger font */
             text-align: center;
+            margin: 0;
         }
         nav {
             display: flex;
-            flex-direction: column;
             align-items: center;
-            width: 100%;
         }
         nav ul {
             list-style: none;
@@ -40,14 +39,15 @@
             flex-wrap: wrap;
             justify-content: center;
             padding: 0;
+            margin: 0;
         }
         nav ul li {
-            margin: 5px 15px;
+            margin: 0 30px; /* Doubled margin */
         }
         nav ul li a {
             text-decoration: none;
             color: #ecf0f1;
-            font-size: 1rem;
+            font-size: 1rem; /* Slightly larger font */
             transition: color 0.3s ease;
         }
         nav ul li a:hover {
@@ -114,10 +114,14 @@
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
+                padding: 15px 20px; /* Adjusted padding for mobile */
             }
             nav ul {
                 flex-direction: column;
                 text-align: center;
+            }
+            nav ul li {
+                margin: 10px 0; /* Adjusted margin for mobile */
             }
             .grid-container {
                 grid-template-columns: 1fr;
@@ -132,11 +136,9 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#clubs">Clubs</a></li>
-                <li><a href="#career">Career</a></li>
-                <li><a href="#academics">Academics</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#get-institution">Get One for Your Institution</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
     </header>
