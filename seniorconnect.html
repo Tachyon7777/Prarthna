@@ -4,7 +4,175 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Senior Connect</title>
-    <link rel="stylesheet" href="seniorconnect.css">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #000000, #34495e);
+            color: #ecf0f1;
+            scroll-behavior: smooth;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(52, 73, 94, 0.9);
+            padding: 15px 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            height: 40px;
+            width: auto;
+        }
+
+        .logo h1 {
+            color: #f1c40f;
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ecf0f1;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #f1c40f;
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #f1c40f;
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .sector-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .senior-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .senior-card:hover {
+            transform: scale(1.05);
+        }
+
+        .senior-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .senior-card h3 {
+            color: #f1c40f;
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        .senior-card p {
+            font-size: 0.9rem;
+            margin: 10px 0;
+        }
+
+        .senior-card a {
+            display: inline-block;
+            background: #f1c40f;
+            color: #2c3e50;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .senior-card a:hover {
+            background: #d4ac0d;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: rgba(52, 73, 94, 0.9);
+            color: #ecf0f1;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 15px 20px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .sector-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .senior-card {
+                width: 80%;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -15,10 +183,10 @@
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">SDE</a></li>
-                <li><a href="#">Consultancy</a></li>
-                <li><a href="#">Finance</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#sde">SDE</a></li>
+                <li><a href="#consultancy">Consultancy</a></li>
+                <li><a href="#finance">Finance</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -29,7 +197,7 @@
             <div class="senior-card">
                 <img src="senior1.jpg" alt="Senior 1">
                 <h3>Senior1</h3>
-                <p>details</p>
+                <p>Details</p>
                 <a href="https://www.linkedin.com/in/" target="_blank">LinkedIn</a>
             </div>
             <div class="senior-card">
@@ -53,7 +221,7 @@
             <div class="senior-card">
                 <img src="senior4.jpg" alt="Senior 4">
                 <h3>Senior4</h3>
-                <p>details</p>
+                <p>Details</p>
                 <a href="https://www.linkedin.com/in/" target="_blank">LinkedIn</a>
             </div>
             <div class="senior-card">
@@ -64,8 +232,8 @@
             </div>
             <div class="senior-card">
                 <img src="senior6.jpg" alt="Senior 6">
-                <h3>Senior 6</h3>
-                <p>details</p>
+                <h3>Senior6</h3>
+                <p>Details</p>
                 <a href="https://www.linkedin.com/in/" target="_blank">LinkedIn</a>
             </div>
         </div>
@@ -76,19 +244,19 @@
         <div class="sector-container">
             <div class="senior-card">
                 <img src="senior7.jpg" alt="Senior 7">
-                <h3>senior 7</h3>
-                <p>details</p>
+                <h3>Senior7</h3>
+                <p>Details</p>
                 <a href="https://www.linkedin.com/in/" target="_blank">LinkedIn</a>
             </div>
             <div class="senior-card">
                 <img src="senior8.jpg" alt="Senior 8">
-                <h3>senior 8</h3>
-                <p>details</p>
+                <h3>Senior8</h3>
+                <p>Details</p>
                 <a href="https://www.linkedin.com/in/" target="_blank">LinkedIn</a>
             </div>
             <div class="senior-card">
                 <img src="senior9.jpg" alt="Senior 9">
-                <h3>senior9</h3>
+                <h3>Senior9</h3>
                 <p>Details</p>
                 <a href="https://www.linkedin.com/in/" target="_blank">LinkedIn</a>
             </div>
